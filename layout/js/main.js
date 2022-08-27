@@ -64,7 +64,7 @@ function addItem(e) {
 function removeItem(e) {
     e.preventDefault();
     if (e.target.classList.contains("delete")) {
-        if (confirm("هل انت متأكد ?")) {
+        if (confirm("هل انت متأكد ؟")) {
             let li = e.target.parentNode;
             items.removeChild(li);
             document.getElementById("lblsuccess").innerHTML = "Text deleted successfully";
